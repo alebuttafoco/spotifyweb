@@ -8,6 +8,10 @@
 }
 
 /* MAIN */
+main{
+    height: 100vh;
+}
+
 .main_row{
     height: calc(100vh - 75px);
 }
@@ -47,6 +51,11 @@
 }
 
 .playlist_box{
-    height: auto;
+    height: 300px;
     overflow-y: auto;
+}
+
+.main_view{
+    overflow-y: auto;
+    overflow-x: hidden;
 }

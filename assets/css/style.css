@@ -1,0 +1,10 @@
+
+/* MAIN */
+.main_row{
+    height: calc(100vh - 75px);
+}
+
+.bottom_row{
+    height: 75px; /* altezza fissa */
+}
+

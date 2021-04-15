@@ -55,13 +55,8 @@ main{
     opacity: 1;
 }
 
-.home_nav img{
-    width: 35px;
-}
-
 .home_nav a > img{
     width: 25px;
-    margin-right: 10px;
 }
 
 /* playlist */

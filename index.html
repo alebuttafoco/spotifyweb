@@ -32,19 +32,30 @@
             <aside class="side_menu bg-dark p-0 text-white d-flex flex-column">
 
                 <!-- logo -->
-                <div class="logo py-4 pl-3 pr-5">
+                <div class="logo d-none d-sm-block py-4 pl-3 pr-5">
                     <img src="./assets/img/logo.svg" alt="spotify main logo">
+                </div>
+                <div class="logo_xs m-2 d-sm-none">
+                    <img src="./assets/img/logo-small.svg" alt="main logo small">
                 </div>
 
                 <!-- navigazione libreria -->
                 <nav class="home_nav d-flex flex-column">
-                    <a href="#" class="border_green op_1 pl-3 py-2"><img src="./assets/img/home.svg" alt="home icon">Home</a>
-                    <a href="#" class="pl-3 py-2"><img src="./assets/img/search.svg" alt="search icon"> Cerca</a>
-                    <a href="#" class="pl-3 py-2"><img src="./assets/img/libreria.svg" alt="library icon">La tua libreria</a>
+                    <!-- home -->
+                    <a href="#" class="d-none d-sm-block border_green op_1 pl-3 py-2"><img src="./assets/img/home.svg" alt="home icon">Home</a>
+                    <img class="d-sm-none mx-2 my-2" src="./assets/img/home.svg" alt="home icon">
+
+                    <!-- search -->
+                    <a href="#" class="d-none d-sm-block pl-3 py-2"><img src="./assets/img/search.svg" alt="search icon">Cerca</a>
+                    <img class="d-sm-none mx-2 my-2" src="./assets/img/search.svg" alt="search icon">
+
+                    <!-- library -->
+                    <a href="#" class="d-none d-sm-block pl-3 py-2"><img src="./assets/img/libreria.svg" alt="library icon">La tua libreria</a>
+                    <img class="d-sm-none mx-2 my-2" src="./assets/img/libreria.svg" alt="library icon">
                 </nav>
 
                 <!-- playlist -->
-                <div class="playlist px-3">
+                <div class="playlist d-none d-sm-block px-3">
                     <h5 class="text-uppercase py-3">playlist</h5>
                 
                     <div class="new_playlist">
@@ -63,15 +74,15 @@
                 </div>
 
                 <!-- bottom info -->
-                <div class="bottom_info col d-flex flex-column justify-content-end px-3">
+                <div class="bottom_info col d-flex flex-column justify-content-end px-2 px-sm-3">
                     <!-- installa -->
-                    <a class="py-2" href="#"><i class="far fa-arrow-alt-circle-down mr-2"></i>Installa app</a>
+                    <a class="d-none d-sm-block py-2" href="#"><i class="far fa-arrow-alt-circle-down mr-2"></i>Installa app</a>
+                    <i class="far fa-arrow-alt-circle-down m-2 d-sm-none"></i>
 
                     <!-- user name -->
-                    <span class="user_name py-2 border-top"><img class="rounded-circle" src="./assets/img/profile.svg" alt="profile icon"> John Doe</span>
+                    <span class="user_name d-none d-sm-block py-2 border-top"><img class="rounded-circle" src="./assets/img/profile.svg" alt="profile icon"> John Doe</span>
+                    <img class="rounded-circle my-2 d-sm-none" src="./assets/img/profile.svg" alt="profile icon">
                 </div>
-
-
             </aside>
 
             <!-- main view -->

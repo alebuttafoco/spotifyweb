@@ -1,5 +1,11 @@
 /* COMMON RULES */
-/* #ADFF2F */
+.border_green{
+    border-left: 3px solid #ADFF2F;
+}
+
+.op_1{
+    opacity: 1 !important;
+}
 
 /* MAIN */
 .main_row{
@@ -15,20 +21,32 @@
     width: 180px;
 }
 
-.home_nav a{
+.home_nav a,
+.new_playlist a,
+.playlist_box a{
     color: white;
-    opacity: .7;
-    padding: 10px 20px;
+    opacity: .6;
     text-decoration: none;
 }
 
-.home_nav a:hover{
+.home_nav a:hover,
+.new_playlist a:hover{
     opacity: 1;
-    border-left: 3px solid #ADFF2F;
-
 }
 
 .home_nav a > img{
     width: 25px;
     margin-right: 10px;
+}
+
+/* playlist */
+.fa-plus{
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.playlist_box{
+    height: auto;
+    overflow-y: auto;
 }

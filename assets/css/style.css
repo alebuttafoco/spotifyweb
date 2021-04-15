@@ -1,3 +1,5 @@
+/* COMMON RULES */
+/* #ADFF2F */
 
 /* MAIN */
 .main_row{
@@ -8,3 +10,25 @@
     height: 75px; /* altezza fissa */
 }
 
+/* side menu */
+.logo img{
+    width: 180px;
+}
+
+.home_nav a{
+    color: white;
+    opacity: .7;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.home_nav a:hover{
+    opacity: 1;
+    border-left: 3px solid #ADFF2F;
+
+}
+
+.home_nav a > img{
+    width: 25px;
+    margin-right: 10px;
+}

@@ -16,6 +16,15 @@ main{
     height: calc(100vh - 75px);
 }
 
+.main_row{
+    overflow-x: hidden;
+}
+
+.main_view{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 .bottom_row{
     height: 75px; /* altezza fissa */
 }
@@ -27,14 +36,18 @@ main{
 
 .home_nav a,
 .new_playlist a,
-.playlist_box a{
+.playlist_box a,
+.bottom_info a{
+    font-size: small;
     color: white;
     opacity: .6;
     text-decoration: none;
 }
 
 .home_nav a:hover,
-.new_playlist a:hover{
+.new_playlist a:hover,
+.playlist_box a:hover,
+.bottom_info a:hover{
     opacity: 1;
 }
 
@@ -51,11 +64,14 @@ main{
 }
 
 .playlist_box{
-    height: 300px;
+    height: 450px;
     overflow-y: auto;
 }
 
-.main_view{
-    overflow-y: auto;
-    overflow-x: hidden;
+/* bottom info */
+
+.user_name img{
+    width: 25px;
+    padding: 0 2px;
+    background-color: #808080;
 }

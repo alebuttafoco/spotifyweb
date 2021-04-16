@@ -38,7 +38,8 @@ main{
 .home_nav a,
 .new_playlist a,
 .playlist_box a,
-.bottom_info a{
+.bottom_info a,
+.music_nav > ul > li > a{
     font-size: small;
     color: white;
     opacity: .6;
@@ -48,7 +49,8 @@ main{
 .home_nav a:hover,
 .new_playlist a:hover,
 .playlist_box a:hover,
-.bottom_info a:hover{
+.bottom_info a:hover,
+.music_nav > ul > li > a:hover{
     opacity: 1;
 }
 
@@ -96,10 +98,43 @@ main{
     position: fixed;
     top:0;
     background-color: black;
-    opacity: .85;
+    opacity: .5;
 }
 
 .upgrade_bar .btn{
     font-size: small;
+}
+
+/* content - music nav */
+.music_nav{
+        padding-top: 90px;
+}
+
+.music_nav > ul > li{
+    list-style: none;
+    padding: 0 15px;
+    padding-bottom: 15px;
+}
+
+.music_nav > ul li:first-child > a::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #ADFF2F;
+    width: 30px;
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:575.98px){
+    .side_menu{
+        width: 50px;
+    }
+
+    .upgrade_bar{
+        width: calc(100% - 50px);
+        
+    }
+    
 }
 

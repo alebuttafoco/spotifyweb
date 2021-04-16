@@ -94,15 +94,20 @@ main{
 
 /* upgrade bar */
 .upgrade_bar{
-    width: calc(100% - 250px);
+    width: calc(100% - 270px);
     position: fixed;
     top:0;
     background-color: black;
-    opacity: .5;
+    opacity: .85;
+    z-index: 1;
 }
 
 .upgrade_bar .btn{
     font-size: small;
+}
+/* content  */
+.content_box{
+    background-color: #141922;
 }
 
 /* content - music nav */
@@ -123,7 +128,20 @@ main{
     width: 30px;
 }
 
+/* content - music tracks */
+/* .music_tracks{
+    height: calc(100vh - 70px);
+}
+ */
+.music_tracks img{
+    width: 100%;
+}
 
+.subtitle,
+.suggestion_text{
+    font-size: smaller;
+    opacity: .6;
+}
 
 /* MEDIA QUERY */
 @media screen and (max-width:575.98px){
@@ -132,7 +150,7 @@ main{
     }
 
     .upgrade_bar{
-        width: calc(100% - 50px);
+        width: calc(100% - 70px);
         
     }
     

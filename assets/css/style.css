@@ -11,13 +11,30 @@
     opacity: 1 !important;
 }
 
+.home_nav a,
+.new_playlist a,
+.playlist_box a,
+.bottom_info a,
+.music_nav > ul > li > a,
+.icon_left_box a{
+    font-size: small;
+    color: white;
+    opacity: .6;
+    text-decoration: none;
+}
+
+.home_nav a:hover,
+.new_playlist a:hover,
+.playlist_box a:hover,
+.bottom_info a:hover,
+.music_nav > ul > li > a:hover,
+.icon_left_box a:hover{
+    opacity: 1;
+}
+
 /* MAIN */
 main{
     height: 100vh;
-}
-
-.bottom_row{
-    height: 70px; /* altezza fissa */
 }
 
 /* side menu */
@@ -33,25 +50,6 @@ main{
 
 .logo_xs{
     width: 35px;
-}
-
-.home_nav a,
-.new_playlist a,
-.playlist_box a,
-.bottom_info a,
-.music_nav > ul > li > a{
-    font-size: small;
-    color: white;
-    opacity: .6;
-    text-decoration: none;
-}
-
-.home_nav a:hover,
-.new_playlist a:hover,
-.playlist_box a:hover,
-.bottom_info a:hover,
-.music_nav > ul > li > a:hover{
-    opacity: 1;
 }
 
 .home_nav a > img{
@@ -99,7 +97,7 @@ main{
     top:0;
     background-color: black;
     opacity: .85;
-    z-index: 1;
+    /* modifica z-index ************************/
 }
 
 .upgrade_bar .btn{
@@ -113,6 +111,7 @@ main{
 /* content  */
 .content_box{
     background-color: #141922;
+    /* modifica z-index *************************/
 }
 
 /* content - music nav */
@@ -139,7 +138,8 @@ main{
 }
 
 .subtitle,
-.suggestion_text{
+.suggestion_text,
+.brano_nome{
     font-size: smaller;
     opacity: .6;
 }
@@ -162,6 +162,66 @@ main{
     font-size: 3.5rem;
 }
 
+/* FOOTER - player */
+.player{
+    height: 70px; /* altezza fissa */
+    background-color: #282828;
+    /* modifica z-index ************************* */
+}
+
+.small_image{
+    width: 40px;
+}
+
+.track_name{
+    font-size: small;
+}
+
+.text_small_current_track a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.text_small_current_track a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.icon_left_box a,
+.options a{
+    font-size: small;
+}
+
+.vol_bar{
+    width: 100px;
+    height: 4px;
+    background-color: #5A5A5A;
+    border-radius: 25px;
+}
+
+.bar_active{
+    width: 30%;
+    height: 4px;
+    background-color: #C1C1C1;
+    border-radius: 25px;
+}
+
+.bar_active:hover{
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
+
+{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+
 
 /* MEDIA QUERY */
 @media screen and (max-width:575.98px){
@@ -175,4 +235,3 @@ main{
     }
     
 }
-

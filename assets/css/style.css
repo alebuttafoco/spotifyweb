@@ -144,6 +144,23 @@ main{
     opacity: .6;
 }
 
+.layover_play:hover > i{
+    display: block !important;
+    cursor: pointer;
+}
+
+.layover_play:hover img{
+    opacity: .5;
+    cursor: pointer;
+}
+
+.layover_play i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+}
 
 
 /* MEDIA QUERY */

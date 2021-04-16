@@ -1,4 +1,8 @@
 /* COMMON RULES */
+.bg_black{
+    background-color: black;
+}
+
 .border_green{
     border-left: 3px solid #ADFF2F;
 }

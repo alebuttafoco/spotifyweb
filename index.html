@@ -25,7 +25,7 @@
 
 <body>
     <!-- MAIN -->
-    <main class="container-fluid">
+    <div class="container-fluid">
 
         <div class="main_row row">
             <!-- side menu -->
@@ -62,7 +62,7 @@
                         <a href="#" class="d-flex align-items-center"><i class="fas fa-plus p-2 mr-2"></i> Crea Playlist</a>
                     </div>
 
-                    <div class="playlist_box d-flex flex-column">
+                    <div class="playlist_box d-flex flex-column ">
                         <a href="#" class="mt-3">Nome Playlist</a>
                         <a href="#" class="mt-3">Nome Playlist</a>
                         <a href="#" class="mt-3">Nome Playlist</a>
@@ -74,7 +74,7 @@
                 </div>
 
                 <!-- bottom info -->
-                <div class="bottom_info col d-flex flex-column justify-content-end px-2 px-sm-3">
+                <div class="bottom_info mt-auto d-flex flex-column justify-content-end px-2 px-sm-3">
                     <!-- installa -->
                     <a class="d-none d-sm-block py-2" href="#"><i class="far fa-arrow-alt-circle-down mr-2"></i>Installa app</a>
                     <a href="#" class="text-center"><i class="far fa-arrow-alt-circle-down m-2 d-sm-none"></i></a>
@@ -86,7 +86,19 @@
             </aside>
 
             <!-- main view -->
-            <div class="main_view col bg-warning"></div>
+            <main class="main_view col p-0">
+
+                <!-- upgrade bar -->
+                <div class="upgrade_bar text-right p-3">
+                    <span class="btn border rounded-pill text-uppercase text-white px-4 py-2">effettua l'upgrade</span>
+                </div>
+
+                <!-- music nav -->
+
+                <!-- content -->
+
+
+            </main>
         </div>
 
         <!-- player -->
@@ -94,7 +106,7 @@
             <div class="player col-12 bg-primary"></div>
         </div>
         
-    </main>
+    </div>
     <!-- /MAIN -->
 
 </body>

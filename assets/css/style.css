@@ -16,24 +16,17 @@ main{
     height: 100vh;
 }
 
-.main_row{
-    height: calc(100vh - 75px);
-}
-
-.main_row{
-    overflow-x: hidden;
-}
-
-.main_view{
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
 .bottom_row{
-    height: 75px; /* altezza fissa */
+    height: 70px; /* altezza fissa */
 }
 
 /* side menu */
+.side_menu{
+    width: 250px;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+}
+
 .logo img{
     width: 180px;
 }
@@ -64,6 +57,11 @@ main{
 }
 
 /* playlist */
+.playlist{
+    height: 100%;
+    overflow: hidden;
+}
+
 .fa-plus{
     background-color: white;
     color: black;
@@ -71,7 +69,7 @@ main{
 }
 
 .playlist_box{
-    height: 450px;
+    height: 70%;
     overflow-y: auto;
 }
 
@@ -82,3 +80,26 @@ main{
     padding: 0 2px;
     background-color: #808080;
 }
+
+/* MAIN VIEW */
+.main_view{
+    width: calc(100% - 250px);
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* upgrade bar */
+.upgrade_bar{
+    width: calc(100% - 250px);
+    position: fixed;
+    top:0;
+    background-color: black;
+    opacity: .85;
+}
+
+.upgrade_bar .btn{
+    font-size: small;
+}
+

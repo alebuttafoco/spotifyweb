@@ -33,10 +33,6 @@
 }
 
 /* MAIN */
-main{
-    height: 100vh;
-}
-
 /* side menu */
 .side_menu{
     width: 250px;
@@ -92,13 +88,12 @@ main{
 
 /* upgrade bar */
 .upgrade_bar{
-    width: calc(100% - 270px);
+    width: calc(100% - 250px);
     position: fixed;
     top:0;
     background-color: black;
     opacity: .85;
-    /* modifica z-index ************************/
-    z-index: 1;
+    z-index: 1; 
 }
 
 .upgrade_bar .btn{
@@ -225,12 +220,11 @@ main{
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
-
 }
 
 /* player commands */
 .status_bar{
-    width: 500px;
+    width: 40%;
     height: 4px;
     background-color: #5A5A5A;
     border-radius: 25px;
@@ -250,10 +244,6 @@ main{
     font-size: 10px;
 }
 
-
-
-
-
 /* MEDIA QUERY */
 @media screen and (max-width:575.98px){
     .side_menu{
@@ -261,8 +251,28 @@ main{
     }
 
     .upgrade_bar{
-        width: calc(100% - 70px);
+        width: calc(100% - 50px);
         
     }
     
 }
+
+/* scrollbar style per il bonus*/
+/* ::-webkit-scrollbar{
+    width: 10px;
+    background: #5A5A5A;
+}
+
+::-webkit-scrollbar-thumb{
+    -webkit-border-radius:25px;
+    background-color: #C1C1C1;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #ADFF2F;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background-color:#517915;
+}
+ */

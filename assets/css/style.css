@@ -212,12 +212,15 @@ main{
     cursor: pointer;
 }
 
-{
-    content: '';
-    width: 5px;
-    height: 5px;
-    background-color: red;
+.bar_active:hover .pointer_status_vol{
+    width: 10px;
+    height: 10px;
+    background-color: white;
     border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
 
 }
 

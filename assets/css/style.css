@@ -98,13 +98,15 @@ main{
     background-color: black;
     opacity: .85;
     /* modifica z-index ************************/
+    z-index: 1;
 }
 
 .upgrade_bar .btn{
     font-size: small;
 }
 
-.upgrade_bar .btn:hover{
+.upgrade_bar .btn:hover,
+.command_content a .fa-play-circle:hover{
     transform: scale(1.05);
 }
 
@@ -163,12 +165,13 @@ main{
 }
 
 /* FOOTER - player */
-.player{
+#site_footer{
     height: 70px; /* altezza fissa */
     background-color: #282828;
     /* modifica z-index ************************* */
 }
 
+/* current track */
 .small_image{
     width: 40px;
 }
@@ -193,6 +196,7 @@ main{
     font-size: small;
 }
 
+/* right options */
 .vol_bar{
     width: 100px;
     height: 4px;
@@ -223,6 +227,30 @@ main{
     transform: translate(0, -50%);
 
 }
+
+/* player commands */
+.status_bar{
+    width: 500px;
+    height: 4px;
+    background-color: #5A5A5A;
+    border-radius: 25px;
+}
+
+.command_content a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+
+.command_content a .fa-play-circle{
+    font-size: xx-large;
+}
+
+.time{
+    font-size: 10px;
+}
+
+
 
 
 

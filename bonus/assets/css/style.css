@@ -252,35 +252,17 @@
         width: calc(100% - 50px);
         
     }
-    
 }
 
+
+/* BONUS */
 /* scomparsa upgrade bar */
-@media screen and (min-height: 150.98px) {
+@media screen and (max-height: 250px) {
     .upgrade_bar{
-        animation-name: show_down;
-        animation-duration: 1s;
-    }
-
-    @keyframes show_down {
-        from{
-            position: fixed;
-            top:-100px;
-        }
-
-        to{
-            position: fixed;
-            top:0;
-        }
+        transition: all 1s;
+        transform: translateY(-100px);
     }
 }
-
-@media screen and (max-height: 150px) {
-    .upgrade_bar{
-        display: none;
-    }
-}
-
 
 /* scrollbar style */
 ::-webkit-scrollbar{

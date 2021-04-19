@@ -156,6 +156,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3.5rem;
+    animation-name: boing;  /* aggiunta bonus */   
+    animation-duration: .5s;
 }
 
 /* FOOTER - player */
@@ -257,6 +259,16 @@
 
 /* BONUS */
 /* scomparsa upgrade bar */
+.layover_play img{
+    transition: all 1s;
+}
+
+@keyframes boing {
+    50%{
+        color: #ADFF2F;        
+    }
+}
+
 @media screen and (max-height: 250px) {
     .upgrade_bar{
         transition: all 1s;

@@ -65,7 +65,7 @@
 }
 
 .playlist_box{
-    height: 70%;
+    height: 55%;
     overflow-y: auto;
 }
 
@@ -108,7 +108,6 @@
 /* content  */
 .content_box{
     background-color: #141922;
-    /* modifica z-index *************************/
 }
 
 /* content - music nav */
@@ -163,7 +162,6 @@
 #site_footer{
     height: 70px; /* altezza fissa */
     background-color: #282828;
-    /* modifica z-index ************************* */
 }
 
 /* current track */
@@ -256,23 +254,3 @@
     }
     
 }
-
-/* scrollbar style per il bonus*/
-/* ::-webkit-scrollbar{
-    width: 10px;
-    background: #5A5A5A;
-}
-
-::-webkit-scrollbar-thumb{
-    -webkit-border-radius:25px;
-    background-color: #C1C1C1;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background-color: #ADFF2F;
-}
-
-::-webkit-scrollbar-thumb:active{
-    background-color:#517915;
-}
- */

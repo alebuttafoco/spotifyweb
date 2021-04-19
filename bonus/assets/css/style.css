@@ -252,12 +252,34 @@
 
     .upgrade_bar{
         width: calc(100% - 50px);
-        
+    }
+
+    .options,
+    .current_track{
+        transition: all 1s;
+        width: 0;
+        transform: translateY(100px);
+    }
+
+    #site_footer{
+        overflow: hidden;
     }
 }
 
+@media screen and (min-width:575.98px) {
+    .options,
+    .current_track{
+        transition: all 1s;
+    }
+}
 
 /* BONUS */
+/* .current_track,
+.options{
+    width: 25%;
+} */
+
+
 /* scomparsa upgrade bar */
 .layover_play img{
     transition: all 1s;

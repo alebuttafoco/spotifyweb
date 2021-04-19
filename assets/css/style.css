@@ -65,7 +65,7 @@
 }
 
 .playlist_box{
-    height: 55%;
+    height: 60%;
     overflow-y: auto;
 }
 
@@ -251,6 +251,10 @@
     .upgrade_bar{
         width: calc(100% - 50px);
         
+    }
+
+    .bottom_info{
+        height: 100%;
     }
     
 }

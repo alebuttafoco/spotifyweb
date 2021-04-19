@@ -1,0 +1,302 @@
+/* COMMON RULES */
+.bg_black{
+    background-color: black;
+}
+
+.border_green{
+    border-left: 3px solid #ADFF2F;
+}
+
+.op_1{
+    opacity: 1 !important;
+}
+
+.home_nav a,
+.new_playlist a,
+.playlist_box a,
+.bottom_info a,
+.music_nav > ul > li > a,
+.icon_left_box a{
+    font-size: small;
+    color: white;
+    opacity: .6;
+    text-decoration: none;
+}
+
+.home_nav a:hover,
+.new_playlist a:hover,
+.playlist_box a:hover,
+.bottom_info a:hover,
+.music_nav > ul > li > a:hover,
+.icon_left_box a:hover{
+    opacity: 1;
+}
+
+/* MAIN */
+/* side menu */
+.side_menu{
+    width: 250px;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+}
+
+.logo img{
+    width: 180px;
+}
+
+.logo_xs{
+    width: 35px;
+}
+
+.home_nav a > img{
+    width: 25px;
+}
+
+/* playlist */
+.playlist{
+    height: 100%;
+    overflow: hidden;
+}
+
+.fa-plus{
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.playlist_box{
+    height: 55%;
+    overflow-y: auto;
+}
+
+/* bottom info */
+.user_name img,
+.bottom_info img{
+    width: 35px;
+    padding: 0 2px;
+    background-color: #808080;
+}
+
+/* MAIN VIEW */
+.main_view{
+    width: calc(100% - 250px);
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* upgrade bar */
+.upgrade_bar{
+    width: calc(100% - 250px);
+    position: fixed;
+    top:0;
+    background-color: black;
+    opacity: .85;
+    z-index: 1; 
+}
+
+.upgrade_bar .btn{
+    font-size: small;
+}
+
+.upgrade_bar .btn:hover,
+.command_content a .fa-play-circle:hover{
+    transform: scale(1.05);
+}
+
+/* content  */
+.content_box{
+    background-color: #141922;
+}
+
+/* content - music nav */
+.music_nav{
+        padding-top: 90px;
+}
+
+.music_nav > ul > li{
+    list-style: none;
+    padding: 0 15px;
+    padding-bottom: 15px;
+}
+
+.music_nav > ul li:first-child > a::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #ADFF2F;
+    width: 30px;
+}
+
+/* content - music tracks */
+.music_tracks img{
+    width: 100%;
+}
+
+.subtitle,
+.suggestion_text,
+.brano_nome{
+    font-size: smaller;
+    opacity: .6;
+}
+
+.layover_play:hover > i{
+    display: block !important;
+    cursor: pointer;
+}
+
+.layover_play:hover img{
+    opacity: .5;
+    cursor: pointer;
+}
+
+.layover_play i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+}
+
+/* FOOTER - player */
+#site_footer{
+    height: 70px; /* altezza fissa */
+    background-color: #282828;
+}
+
+/* current track */
+.small_image{
+    width: 40px;
+}
+
+.track_name{
+    font-size: small;
+}
+
+.text_small_current_track a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.text_small_current_track a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.icon_left_box a,
+.options a{
+    font-size: small;
+}
+
+/* right options */
+.vol_bar{
+    width: 100px;
+    height: 4px;
+    background-color: #5A5A5A;
+    border-radius: 25px;
+}
+
+.bar_active{
+    width: 30%;
+    height: 4px;
+    background-color: #C1C1C1;
+    border-radius: 25px;
+}
+
+.bar_active:hover{
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
+
+.bar_active:hover .pointer_status_vol{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* player commands */
+.status_bar{
+    width: 40%;
+    height: 4px;
+    background-color: #5A5A5A;
+    border-radius: 25px;
+}
+
+.command_content a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+
+.command_content a .fa-play-circle{
+    font-size: xx-large;
+}
+
+.time{
+    font-size: 10px;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width:575.98px){
+    .side_menu{
+        width: 50px;
+    }
+
+    .upgrade_bar{
+        width: calc(100% - 50px);
+        
+    }
+    
+}
+
+/* scomparsa upgrade bar */
+@media screen and (min-height: 150.98px) {
+    .upgrade_bar{
+        animation-name: show_down;
+        animation-duration: 1s;
+    }
+
+    @keyframes show_down {
+        from{
+            position: fixed;
+            top:-100px;
+        }
+
+        to{
+            position: fixed;
+            top:0;
+        }
+    }
+}
+
+@media screen and (max-height: 150px) {
+    .upgrade_bar{
+        display: none;
+    }
+}
+
+
+/* scrollbar style */
+::-webkit-scrollbar{
+    width: 10px;
+    background: #5A5A5A;
+}
+
+::-webkit-scrollbar-thumb{
+    -webkit-border-radius:25px;
+    background-color: #C1C1C1;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #ADFF2F;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background-color:#517915;
+}
